@@ -1,0 +1,39 @@
+.footer-wrapper {
+  height: 56px;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  position: relative;
+  z-index: 3;
+
+  .menu-items {
+    width: calc(100% - 20px);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 10px;
+    height: 100%;
+
+    li {
+      flex: 1;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100% - 13px);
+      color: #444;
+      font-size: 20px;
+      width: 60px;
+
+      &.active {
+        background-color: #3483f326;
+        border-radius: 5px;
+
+        svg {
+          color: #3483f3;
+        }
+      }
+    }
+  }
+}
